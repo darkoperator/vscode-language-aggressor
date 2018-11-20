@@ -1,0 +1,25 @@
+{
+    "name": "aggressorscript",
+    "displayName": "AggressorScript",
+    "description": "Extension for the Cobalt Strike Agressor Script.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.29.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cna",
+            "aliases": ["AggressorScript", "cna"],
+            "extensions": ["cna"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cna",
+            "scopeName": "source.cna",
+            "path": "./syntaxes/cna.tmLanguage.json"
+        }]
+    }
+}
