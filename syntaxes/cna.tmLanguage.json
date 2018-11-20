@@ -11,11 +11,13 @@
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.cna",
-				"match": "\\b(if|else|while|for|return|foreach)\\b"
+			"patterns": [
+				{
+					"name": "keyword.control.cna",
+					"match": "\\b(if|else|while|for|return|foreach)\\b"
 				},
-				{"begin": "#",
+				{
+					"begin": "#",
 						"beginCaptures": {
 							"0": {
 								"name": "punctuation.definition.comment.cna"
@@ -66,9 +68,14 @@
 					"name": "constant.language.lua"
 				},
 				{
-					"name": "storage.modifier.cs",
+					"name": "storage.modifier.cna",
 					"match": "(?<!\\.)\\b(on|sub|alias|inline)\\b"
+				},
+				{
+					"name": "keyword.control.cna",
+					"match": "\\b(try|catch|throw)\\b"
 				}
+
 			]
 		},
 		"strings": {
