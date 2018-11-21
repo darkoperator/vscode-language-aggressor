@@ -7,6 +7,27 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#numeric"
+		},
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#variable"
+		},
+		{
+			"include": "#built-in-functions"
+		},
+		{
+			"include": "#operators"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#function-methods"
 		}
 	],
 	"repository": {
@@ -17,62 +38,11 @@
 					"match": "\\b(if|else|while|for|return|foreach)\\b"
 				},
 				{
-					"begin": "#",
-						"beginCaptures": {
-							"0": {
-								"name": "punctuation.definition.comment.cna"
-							}
-						},
-						"end": "\\n",
-						"name": "comment.line.hash.cna"
-				},
-				{
-					"match": "(?i)(\\$|@|\\%+)\\d?[a-z0-9_\\x{7f}-\\x{7fffffff}][a-z0-9_\\x{7f}-\\x{7fffffff}]*",
-					"name": "variable.other.cna",
-					"captures": {
-						"1": {
-							"name": "punctuation.definition.variable.cna"
-						}
-					}
-				},
-				{
-					"match": "(?<![\\w\\d.])0[xX][0-9A-Fa-f]+(?![pPeE.0-9])",
-					"name": "constant.numeric.integer.hexadecimal.cna"
-				},
-				{
-					"match": "(?<![\\w\\d.])0[xX][0-9A-Fa-f]+(\\.[0-9A-Fa-f]+)?([eE]-?\\d*)?([pP][-+]\\d+)?",
-					"name": "constant.numeric.float.hexadecimal.cna"
-				},
-				{
-					"match": "(?<![\\w\\d.])\\d+(?![pPeE.0-9])",
-					"name": "constant.numeric.integer.cna"
-				},
-				{
-					"match": "(?<![\\w\\d.])\\d+(\\.\\d+)?([eE]-?\\d*)?",
-					"name": "constant.numeric.float.cna"
-				},
-				{
-					"match": "\\b(eq|ne|lt|gt|isin|iswm|-isarray|isfunction|-ishash|-isletter|-isnumber|-isupper|-islower|-istrue)\\b",
-					"name": "keyword.operator.cna"
-				},
-				{
-					"match": "x|cmp|\\+|-|%|#|\\*|\\/|\\^|==?|&&|=~|<=?|>=?|(?<!\\.)\\.{2}(?!\\.)",
-					"name": "keyword.operator.cna"
-				},
-				{
-					"match": "\\b([a-zA-Z_][a-zA-Z0-9_]*)\\b(?=\\s*(?:[({\"']|\\[\\[))",
-					"name": "support.function.any-method.cna"
-				},
-				{
-					"match": "(?<![^.]\\.|:)\\b(false|true)\\b|(?<![.])\\.{3}(?!\\.)",
-					"name": "constant.language.lua"
-				},
-				{
 					"name": "storage.modifier.cna",
-					"match": "(?<!\\.)\\b(on|sub|alias|inline)\\b"
+					"match": "(?<!\\.)\\b(inline)\\b"
 				},
 				{
-					"name": "keyword.control.cna",
+					"name": "keyword.control.try.cna",
 					"match": "\\b(try|catch|throw)\\b"
 				}
 
@@ -102,7 +72,109 @@
 					]}
 				
 			]	
+		},
+		"numeric": {
+			"patterns": [
+				{
+					"match": "(?<![\\w\\d.])0[xX][0-9A-Fa-f]+(?![pPeE.0-9])",
+					"name": "constant.numeric.integer.hexadecimal.cna"
+				},
+				{
+					"match": "(?<![\\w\\d.])0[xX][0-9A-Fa-f]+(\\.[0-9A-Fa-f]+)?([eE]-?\\d*)?([pP][-+]\\d+)?",
+					"name": "constant.numeric.float.hexadecimal.cna"
+				},
+				{
+					"match": "(?<![\\w\\d.])\\d+(?![pPeE.0-9])",
+					"name": "constant.numeric.integer.cna"
+				},
+				{
+					"match": "(?<![\\w\\d.])\\d+(\\.\\d+)?([eE]-?\\d*)?",
+					"name": "constant.numeric.float.cna"
+				}
+			]
+		},
+
+		"comment": {
+			"patterns": [
+				{
+					"begin": "#",
+						"beginCaptures": {
+							"0": {
+								"name": "punctuation.definition.comment.cna"
+							}
+						},
+						"end": "\\n",
+						"name": "comment.line.hash.cna"
+				}
+			]
+		},
+
+		"variable": {
+			"patterns": [
+				{
+					"match": "(?i)(\\$|@|\\%+)\\d?[a-z0-9_\\x{7f}-\\x{7fffffff}][a-z0-9_\\x{7f}-\\x{7fffffff}]*",
+					"name": "variable.other.cna",
+					"captures": {
+						"1": {
+							"name": "punctuation.definition.variable.cna"
+						}
+					}
+				}
+			]
+		},
+
+		"built-in-functions": {
+			"patterns": [
+				{
+					"name": "support.function.event.cna",
+					"match": "(?<!\\.)\\b(on|beacon_checkin|beacon_error|beacon_indicator|beacon_initial|beacon_initial_empty|beacon_input|beacon_mode|beacon_output|beacon_output_alt|beacon_output_jobs|beacon_output_ls|beacon_output_ps|beacon_tasked|beacons|disconnect|event_action|event_beacon_initial|event_join|event_newsite|event_notify|event_nouser|event_private|event_public|event_quit|heartbeat_10m|heartbeat_10s|heartbeat_15m|heartbeat_15s|heartbeat_1m|heartbeat_1s|heartbeat_20m|heartbeat_30m|heartbeat_30s|heartbeat_5m|heartbeat_5s|heartbeat_60m|keylogger_hit|profiler_hit|ready|sendmail_done|sendmail_post|sendmail_pre|sendmail_start|ssh_checkin|ssh_error|ssh_indicator|ssh_initial|ssh_input|ssh_output|ssh_output_alt|ssh_tasked|web_hit)\\s*\\w+"
+				},
+				{
+					"name": "support.function.report.cna",
+					"match": "(?<!\\.)\\b(agApplications|agC2info|agCredentials|agServices|agSessions|agTargets|agTokens|attack_describe|attack_detect|attack_mitigate|attack_name|attack_tactics|attack_url|bookmark|br|describe|h1|h2|h3|h4|kvtable|landscape|layout|list_unordered|nobreak|output|p|p_formatted|table|ts)"
+				},
+				{
+					"name": "support.function.cna",
+					"match": "\\b(action|addTab|addVisualization|add_to_clipboard|applications|archives|artifact|artifact_sign|artifact_stageless|base64_decode|base64_encode|bbrowser|bbrowserpivot|bbrowserpivot_stop|bbypassuac|bcancel|bcd|bcheckin|bclear|bcovertvpn|bcp|bdata|bdcsync|bdesktop|bdllinject|bdllload|bdllspawn|bdownload|bdrives|beacon_command_describe|beacon_command_detail|beacon_command_register|beacon_commands|beacon_data|beacon_execute_job|beacon_exploit_describe|beacon_exploit_register|beacon_exploits|beacon_host_imported_script|beacon_host_script|beacon_ids|beacon_info|beacon_remove|beacons|belevate|berror|bexecute|bexecute_assembly|bexit|bgetprivs|bgetsystem|bgetuid|bhashdump|binfo|binject|binjectsh|binput|bipconfig|bjobkill|bjobs|bkerberos_ccache_use|bkerberos_ticket_purge|bkerberos_ticket_use|bkeylogger|bkill|blink|blog|blog2|bloginuser|blogonpasswords|bls|bmimikatz|bmkdir|bmode|bmv|bnet|bnote|bpassthehash|bpause|bportscan|bpowerpick|bpowershell|bpowershell_import|bppid|bps|bpsexec|bpsexec_command|bpsexec_psh|bpsinject|bpwd|breg_query|breg_queryv|brev2self|brm|brportfwd|brportfwd_stop|brunas|brunasadmin|brunu|bscreenshot|bsetenv|bshell|bshinject|bshspawn|bsleep|bsocks|bsocks_stop|bspawn|bspawnas|bspawnto|bspawnu|bssh|bssh_key|bstage|bsteal_token|bsudo|btask|btimestomp|bunlink|bupload|bupload_raw|bwdigest|bwinrm|bwmi|call|closeClient|credential_add|credentials|data_keys|data_query|dbutton_action|dbutton_help|dialog|dialog_description|dialog_show|dispatch_event|downloads|drow_beacon|drow_checkbox|drow_combobox|drow_exploits|drow_file|drow_interface|drow_krbtgt|drow_listener|drow_listener_smb|drow_listener_stage|drow_mailserver|drow_proxyserver|drow_site|drow_text|drow_text_big|dstamp|elog|encode|fireAlias|fireEvent|format_size|gunzip|gzip|host_delete|host_info|host_update|hosts|insert_menu|iprange|keystrokes|licenseKey|listener_create|listener_delete|listener_describe|listener_info|listener_restart|listeners|listeners_local|localip|mynick|nextTab|on|openAboutDialog|openApplicationManager|openAutoRunDialog|openBeaconBrowser|openBeaconConsole|openBrowserPivotSetup|openBypassUACDialog|openCloneSiteDialog|openConnectDialog|openCovertVPNSetup|openCredentialManager|openDownloadBrowser|openElevateDialog|openEventLog|openFileBrowser|openGoldenTicketDialog|openHTMLApplicationDialog|openHostFileDialog|openInterfaceManager|openJavaSignedAppletDialog|openJavaSmartAppletDialog|openJumpDialog|openKeystrokeBrowser|openListenerManager|openMakeTokenDialog|openOfficeMacro|openOrActivate|openPayloadGeneratorDialog|openPayloadHelper|openPivotListenerSetup|openPortScanner|openPortScannerLocal|openPowerShellWebDialog|openPreferencesDialog|openProcessBrowser|openSOCKSBrowser|openSOCKSSetup|openScreenshotBrowser|openScriptConsole|openScriptManager|openScriptedWebDialog|openServiceBrowser|openSiteManager|openSpawnAsDialog|openSpearPhishDialog|openSystemInformationDialog|openSystemProfilerDialog|openTargetBrowser|openWebLog|openWindowsDropperDialog|openWindowsExecutableDialog|openWindowsExecutableStage|pgraph|pivots|popup_clear|powershell|powershell_encode_oneliner|powershell_encode_stager|pref_get|pref_get_list|pref_set|pref_set_list|previousTab|privmsg|prompt_confirm|prompt_directory_open|prompt_file_open|prompt_file_save|prompt_text|range|removeTab|resetData|say|sbrowser|screenshots|script_resource|separator|services|shellcode|showVisualization|show_error|show_message|site_host|site_kill|sites|ssh_command_describe|ssh_command_detail|ssh_command_register|ssh_commands|str_chunk|str_decode|str_encode|sync_download|targets|tbrowser|tokenToEmail|transform|transform_vbs|tstamp|url_open|users|vpn_interface_info|vpn_interfaces|vpn_tap_create|vpn_tap_delete)\\("
+				}
+			]
+		},
+
+		"operators": {
+			"patterns": [
+				{
+					"match": "\\s(eq|ne|lt|gt|isin|iswm|-isarray|isfunction|\\-ishash|\\-isletter|\\-isnumber|\\-isupper|\\-islower|\\-istrue|hasmatch)\\s",
+					"name": "keyword.operator.cna"
+				},
+				{
+					"match": "\\b(x|cmp|\\+|-|%|#|\\*|\\/|\\^|==?|&&|=~|<=?|>=?|(?<!\\.)\\.{2}(?!\\.))\\b",
+					"name": "keyword.operator.cna"
+				}
+			]
+		},
+
+		"constants": {
+			"patterns": [
+				{
+					"match": "(?<![^.]\\.|:)\\b(false|true)\\b|(?<![.])\\.{3}(?!\\.)",
+					"name": "constant.language.cna"
+				}
+			]
+		},
+
+		"function-methods": {
+			"patterns": [
+				{
+					"match": "\\b(alias|sub|command)\\s\\w+|\\&[a-zA-Z_][a-zA-Z0-9_]*",
+					"name": "storage.function.cna"
+				},
+				{
+					"match": "([a-zA-Z_][a-zA-Z0-9_]*)((?:[(]))",
+					"name": "storage.function.any-method.cna"
+				}
+			]
 		}
+
 	},
 	"scopeName": "source.cna"
 }
