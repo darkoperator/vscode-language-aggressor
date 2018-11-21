@@ -22,13 +22,11 @@
             "scopeName": "source.cna",
             "path": "./syntaxes/cna.tmLanguage.json"
         }],
-        "contributes": {
-            "snippets": [
-                {
-                    "language": "cna",
-                    "path": "./snippets/cna.json"
-                }
-            ]
-        }
+        "snippets": [
+            {
+                "language": "cna",
+                "path": "./snippets/cna.json"
+            }
+        ]
     }
 }
