@@ -2,33 +2,15 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "AggressorScript",
 	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		},
-		{
-			"include": "#numeric"
-		},
-		{
-			"include": "#comment"
-		},
-		{
-			"include": "#variable"
-		},
-		{
-			"include": "#built-in-functions"
-		},
-		{
-			"include": "#operators"
-		},
-		{
-			"include": "#constants"
-		},
-		{
-			"include": "#function-methods"
-		}
+		{ "include": "#keywords" },
+		{ "include": "#strings"	},
+		{ "include": "#numeric" },
+		{ "include": "#comment" },
+		{ "include": "#variable" },
+		{ "include": "#built-in-functions" },
+		{ "include": "#operators" },
+		{ "include": "#constants" },
+		{ "include": "#function-methods" }
 	],
 	"repository": {
 		"keywords": {
@@ -93,7 +75,6 @@
 				}
 			]
 		},
-
 		"comment": {
 			"patterns": [
 				{
@@ -108,7 +89,6 @@
 				}
 			]
 		},
-
 		"variable": {
 			"patterns": [
 				{
@@ -122,7 +102,6 @@
 				}
 			]
 		},
-
 		"built-in-functions": {
 			"patterns": [
 				{
@@ -135,11 +114,46 @@
 				},
 				{
 					"name": "support.function.cna",
-					"match": "\\b(action|addTab|addVisualization|add_to_clipboard|applications|archives|artifact|artifact_sign|artifact_stageless|base64_decode|base64_encode|bbrowser|bbrowserpivot|bbrowserpivot_stop|bbypassuac|bcancel|bcd|bcheckin|bclear|bcovertvpn|bcp|bdata|bdcsync|bdesktop|bdllinject|bdllload|bdllspawn|bdownload|bdrives|beacon_command_describe|beacon_command_detail|beacon_command_register|beacon_commands|beacon_data|beacon_execute_job|beacon_exploit_describe|beacon_exploit_register|beacon_exploits|beacon_host_imported_script|beacon_host_script|beacon_ids|beacon_info|beacon_remove|beacons|belevate|berror|bexecute|bexecute_assembly|bexit|bgetprivs|bgetsystem|bgetuid|bhashdump|binfo|binject|binjectsh|binput|bipconfig|bjobkill|bjobs|bkerberos_ccache_use|bkerberos_ticket_purge|bkerberos_ticket_use|bkeylogger|bkill|blink|blog|blog2|bloginuser|blogonpasswords|bls|bmimikatz|bmkdir|bmode|bmv|bnet|bnote|bpassthehash|bpause|bportscan|bpowerpick|bpowershell|bpowershell_import|bppid|bps|bpsexec|bpsexec_command|bpsexec_psh|bpsinject|bpwd|breg_query|breg_queryv|brev2self|brm|brportfwd|brportfwd_stop|brunas|brunasadmin|brunu|bscreenshot|bsetenv|bshell|bshinject|bshspawn|bsleep|bsocks|bsocks_stop|bspawn|bspawnas|bspawnto|bspawnu|bssh|bssh_key|bstage|bsteal_token|bsudo|btask|btimestomp|bunlink|bupload|bupload_raw|bwdigest|bwinrm|bwmi|call|closeClient|credential_add|credentials|data_keys|data_query|dbutton_action|dbutton_help|dialog|dialog_description|dialog_show|dispatch_event|downloads|drow_beacon|drow_checkbox|drow_combobox|drow_exploits|drow_file|drow_interface|drow_krbtgt|drow_listener|drow_listener_smb|drow_listener_stage|drow_mailserver|drow_proxyserver|drow_site|drow_text|drow_text_big|dstamp|elog|encode|fireAlias|fireEvent|format_size|gunzip|gzip|host_delete|host_info|host_update|hosts|insert_menu|iprange|keystrokes|licenseKey|listener_create|listener_delete|listener_describe|listener_info|listener_restart|listeners|listeners_local|localip|mynick|nextTab|on|openAboutDialog|openApplicationManager|openAutoRunDialog|openBeaconBrowser|openBeaconConsole|openBrowserPivotSetup|openBypassUACDialog|openCloneSiteDialog|openConnectDialog|openCovertVPNSetup|openCredentialManager|openDownloadBrowser|openElevateDialog|openEventLog|openFileBrowser|openGoldenTicketDialog|openHTMLApplicationDialog|openHostFileDialog|openInterfaceManager|openJavaSignedAppletDialog|openJavaSmartAppletDialog|openJumpDialog|openKeystrokeBrowser|openListenerManager|openMakeTokenDialog|openOfficeMacro|openOrActivate|openPayloadGeneratorDialog|openPayloadHelper|openPivotListenerSetup|openPortScanner|openPortScannerLocal|openPowerShellWebDialog|openPreferencesDialog|openProcessBrowser|openSOCKSBrowser|openSOCKSSetup|openScreenshotBrowser|openScriptConsole|openScriptManager|openScriptedWebDialog|openServiceBrowser|openSiteManager|openSpawnAsDialog|openSpearPhishDialog|openSystemInformationDialog|openSystemProfilerDialog|openTargetBrowser|openWebLog|openWindowsDropperDialog|openWindowsExecutableDialog|openWindowsExecutableStage|pgraph|pivots|popup_clear|powershell|powershell_encode_oneliner|powershell_encode_stager|pref_get|pref_get_list|pref_set|pref_set_list|previousTab|privmsg|prompt_confirm|prompt_directory_open|prompt_file_open|prompt_file_save|prompt_text|range|removeTab|resetData|say|sbrowser|screenshots|script_resource|separator|services|shellcode|showVisualization|show_error|show_message|site_host|site_kill|sites|ssh_command_describe|ssh_command_detail|ssh_command_register|ssh_commands|str_chunk|str_decode|str_encode|sync_download|targets|tbrowser|tokenToEmail|transform|transform_vbs|tstamp|url_open|users|vpn_interface_info|vpn_interfaces|vpn_tap_create|vpn_tap_delete)\\("
+					"match": "\\b(action|addTab|addVisualization|add_to_clipboard|alias|alias_clear|applications|archives||artifact_general|artifact_payload|artifact_sign||artifact_stager|barch|bargue_add|bargue_list|bargue_remove|base64_decode|base64_encode|bblockdlls|bbrowser|bbrowserpivot|bbrowserpivot_stop|bbypassuac|bcancel|bcd|bcheckin|bclear|bconnect|bcovertvpn|bcp|bdata|bdcsync|bdesktop|bdllinject|bdllload|bdllspawn|bdownload|bdrives|beacon_command_describe|beacon_command_detail|beacon_command_register|beacon_commands|beacon_data|beacon_elevator_describe|beacon_elevator_register|beacon_elevators|beacon_execute_job|beacon_exploit_describe|beacon_exploit_register|beacon_exploits|beacon_host_imported_script|beacon_host_script|beacon_ids|beacon_info|beacon_link|beacon_remote_exec_method_describe|beacon_remote_exec_method_register|beacon_remote_exec_methods|beacon_remote_exploit_arch|beacon_remote_exploit_describe|beacon_remote_exploit_register|beacon_remote_exploits|beacon_remove|beacon_stage_pipe|beacon_stage_tcp|beacons|belevate|belevate_command|berror|bexecute|bexecute_assembly|bexit|bgetprivs|bgetsystem|bgetuid|bhashdump|binfo|binject|binjectsh|binput|bipconfig|bjobkill|bjobs|bjump|bkerberos_ccache_use|bkerberos_ticket_purge|bkerberos_ticket_use|bkeylogger|bkill|blink|blog|blog2|bloginuser|blogonpasswords|bls|bmimikatz|bmkdir|bmode|bmv|bnet|bnote|bpassthehash|bpause|bportscan|bpowerpick|bpowershell|bpowershell_import|bpowershell_import_clear|bppid|bps|bpsexec|bpsexec_command|bpsexec_psh|bpsinject|bpwd|breg_query|breg_queryv|bremote_exec|brev2self|brm|brportfwd|brportfwd_stop|brun|brunas|brunasadmin|brunu|bscreenshot|bsetenv|bshell|bshinject|bshspawn|bsleep|bsocks|bsocks_stop|bspawn|bspawnas|bspawnto|bspawnu|bssh|bssh_key|bstage|bsteal_token|bsudo|btask|btimestomp|bunlink|bupload|bupload_raw|bwdigest|bwinrm|bwmi|call|closeClient|colorPanel|credential_add|credentials|data_keys|data_query|dbutton_action|dbutton_help|dialog|dialog_description|dialog_show|dispatch_event|downloads|drow_beacon|drow_checkbox|drow_combobox|drow_exploits|drow_file|drow_interface|drow_krbtgt|drow_listener||drow_listener_stage|drow_mailserver||drow_site|drow_text|drow_text_big|dstamp|elog|encode|fireAlias|fireEvent|format_size|getAggressorClient|gunzip|gzip|highlight|host_delete|host_info|host_update|hosts|insert_component|insert_menu|iprange|keystrokes|licenseKey||listener_create_ext|listener_delete|listener_describe|listener_info|listener_pivot_create|listener_restart|listeners|listeners_local|listeners_stageless|localip|menubar|mynick|nextTab|on|openAboutDialog|openApplicationManager|openAutoRunDialog|openBeaconBrowser|openBeaconConsole|openBrowserPivotSetup|openBypassUACDialog|openCloneSiteDialog|openConnectDialog|openCovertVPNSetup|openCredentialManager|openDownloadBrowser|openElevateDialog|openEventLog|openFileBrowser|openGoldenTicketDialog|openHTMLApplicationDialog|openHostFileDialog|openInterfaceManager|openJavaSignedAppletDialog|openJavaSmartAppletDialog|openJumpDialog|openKeystrokeBrowser|openListenerManager|openMakeTokenDialog|openOfficeMacro|openOneLinerDialog|openOrActivate|openPayloadGeneratorDialog|openPayloadHelper|openPivotListenerSetup|openPortScanner|openPortScannerLocal|openPowerShellWebDialog|openPreferencesDialog|openProcessBrowser|openSOCKSBrowser|openSOCKSSetup|openScreenshotBrowser|openScriptConsole|openScriptManager|openScriptedWebDialog|openServiceBrowser|openSiteManager|openSpawnAsDialog|openSpearPhishDialog|openSystemInformationDialog|openSystemProfilerDialog|openTargetBrowser|openWebLog|openWindowsDropperDialog|openWindowsExecutableDialog|openWindowsExecutableStage|payload|pgraph|pivots|popup_clear||powershell_command|powershell_compress|||pref_get|pref_get_list|pref_set|pref_set_list|previousTab|privmsg|prompt_confirm|prompt_directory_open|prompt_file_open|prompt_file_save|prompt_text|range|removeTab|resetData|say|sbrowser|screenshots|script_resource|separator|services||showVisualization|show_error|show_message|site_host|site_kill|sites|ssh_command_describe|ssh_command_detail|ssh_command_register|ssh_commands|stager|stager_bind_pipe|stager_bind_tcp|str_chunk|str_decode|str_encode|str_xor|sync_download|targets|tbrowser|tokenToEmail|transform|transform_vbs|tstamp|url_open|users|vpn_interface_info|vpn_interfaces|vpn_tap_create|vpn_tap_delete)"
+				},
+				{
+					"name": "invalid.deprecated.cna",
+					"match": "\\b(artifact|artifact_stageless|drow_listener_smb|drow_proxyserver|listener_create|powershell|powershell_encode_oneliner|powershell_encode_stager|shellcode)"
+				},
+				{
+					"match": "\\b(add|addAll|cast|clear|concat|copy|filter|flatten|map|pop|push|putAll|reduce|remove|removeAll|removeAt|retainAll|reverse|search|shift|size|sort|sorta|sortd|sortn|splice|sublist|sum)",
+					"name": "support.function.cna"
+				},
+				{
+					"match": "(?<!\\.)\\b(formatDate|parseDate|ticks)",
+					"name": "support.function.cna"
+				},
+				{
+					"match": "\\b(chdir|createNewFile|cwd|deleteFile|getFileName|getFileParent|getFileProper|lastModified|listRoots|lof|ls|mkdir|rename|setLastModified|setReadOnly)",
+					"name": "support.function.cna"
+				},
+				{
+					"match": "\\b(add|clear|copy|keys|ohash|ohasha|putAll|remove|setMissPolicy|setRemovalPolicy|size|values)",
+					"name": "support.function.cna"
+				},
+				{
+					"match": "\\b(allocate|available|bread|bwrite|closef|connect|exec|fork|getConsole|listen|mark|openf|print|printAll|printEOF|println|readAll|readAsObject|readb|readc|readln|readObject|reset|setEncoding|sizeof|skip|wait|writeAsObject|writeb|writeObject)",
+					"name": "support.function.cna"
+				},
+				{
+					"match": "\\b(abs|acos|asin|atan|atan2|ceil|checksum|cos|degrees|digest|double|exp|floor|formatNumber|int|log|long|not|parseNumber|radians|rand|round|sin|sqrt|srand|tan|uint)",
+					"name": "support.function.cna"
+				},
+				{
+					"match": "\\b(asc|byteAt|cast|chr|charAt|find|indexOf|join|lc|left|lindexOf|matched|matches|mid|pack|replace|replaceAt|right|split|strlen|strrep|substr|tr|uc|unpack)",
+					"name": "support.function.cna"
+				},
+				{
+					"match": "\\b(acquire|casti|checkError|compile_closure|copy|debug|eval|exit|expr|function|getStackTrace|global|iff|include|inline|invoke|lambda|let|local|newInstance|popl|profile|pushl|release|scalar|semaphore|setf|setField|sleep|systemProperties|taint|this|typeOf|untaint|use|warn|watch)",
+					"name": "support.function.cna"
 				}
 			]
 		},
-
 		"operators": {
 			"patterns": [
 				{
@@ -152,7 +166,6 @@
 				}
 			]
 		},
-
 		"constants": {
 			"patterns": [
 				{
@@ -161,11 +174,10 @@
 				}
 			]
 		},
-
 		"function-methods": {
 			"patterns": [
 				{
-					"match": "\\b(alias|sub|command)\\s\\w+|\\&[a-zA-Z_][a-zA-Z0-9_]*",
+					"match": "\\b(alias|sub|command|popup|item|set)\\s\\w+|\\&[a-zA-Z_][a-zA-Z0-9_]*",
 					"name": "storage.function.cna"
 				},
 				{
@@ -174,7 +186,6 @@
 				}
 			]
 		}
-
 	},
 	"scopeName": "source.cna"
 }

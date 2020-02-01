@@ -1,10 +1,12 @@
 {
     "name": "aggressorscript",
     "displayName": "AggressorScript",
-    "description": "Extension for the Cobalt Strike Agressor Script.",
-    "version": "0.0.1",
+    "description": "Cobalt Strike Aggressor Script Language Extension for Visual Studio Code.",
+    "homepage": "https://github.com/darkoperator/vscode-language-aggressor",
+    "license": "BSD-3-Clause",
+    "version": "1.0.0",
     "engines": {
-        "vscode": "^1.29.0"
+        "vscode": "^1.41.0"
     },
     "categories": [
         "Programming Languages",
@@ -22,11 +24,17 @@
             "scopeName": "source.cna",
             "path": "./syntaxes/cna.tmLanguage.json"
         }],
-        "snippets": [
-            {
-                "language": "cna",
-                "path": "./snippets/cna.json"
-            }
-        ]
-    }
+        "snippets": [{
+            "language": "cna",
+            "path": "./snippets/cna.json"
+        }]
+    },
+    "author": {
+        "name": "Carlos Perez",
+        "url": "https://www.darkoperator.com/"
+    },
+    "contributors": [{
+        "name": "Paul Laîné",
+        "url": "https://twitter.com/am0nsec"
+    }]
 }
