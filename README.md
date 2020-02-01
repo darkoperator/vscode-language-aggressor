@@ -1,4 +1,4 @@
-# cobalt-strike-aggressor-script
+# vscode-language-aggressor
 
 This is a Visual Studio Code (VSC) extension that aims to provide:
 * An implement of the Sleep and Cobalt Strike (CS) Aggressor grammar; and
