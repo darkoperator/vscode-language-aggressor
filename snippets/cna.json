@@ -2441,7 +2441,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2453,7 +2453,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2466,7 +2466,7 @@
 			"\t\\$user = \\$2;",
 			"\t\\$message = \\$3;",
 			"\t\\$when = \\$4;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2476,7 +2476,7 @@
 		"body": [
 			"on beacon_indicator {",
 			"\t\\$beacon = \\$1;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2486,7 +2486,7 @@
 		"body": [
 			"on beacon_initial_empty {",
 			"\t\\$beacon = \\$1;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2499,7 +2499,7 @@
 			"\t\\$user = \\$2;",
 			"\t\\$message = \\$3;",
 			"\t\\$when = \\$4;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2511,7 +2511,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2523,7 +2523,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2535,7 +2535,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2547,7 +2547,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2559,7 +2559,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2571,7 +2571,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2583,7 +2583,7 @@
 			"\t\\$beacon = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2593,7 +2593,7 @@
 		"body": [
 			"on beacons {",
 			"\t\\$data = \\$1;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2602,7 +2602,7 @@
 		"prefix": "disconnect",
 		"body": [
 			"on disconnect {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2614,7 +2614,7 @@
 			"\t\\$user = \\$1;",
 			"\t\\$message = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2625,7 +2625,7 @@
 			"on event_beacon_initial {",
 			"\t\\$message = \\$1;",
 			"\t\\$when = \\$2;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2636,7 +2636,7 @@
 			"on event_join {",
 			"\t\\$user = \\$1;",
 			"\t\\$when = \\$2;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2648,7 +2648,7 @@
 			"\t\\$user = \\$1;",
 			"\t\\$content = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2659,7 +2659,7 @@
 			"on event_notify {",
 			"\t\\$content = \\$1;",
 			"\t\\$when = \\$2;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2670,7 +2670,7 @@
 			"on event_nouser {",
 			"\t\\$user = \\$1;",
 			"\t\\$when = \\$2;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2683,7 +2683,7 @@
 			"\t\\$to = \\$2;",
 			"\t\\$content = \\$3;",
 			"\t\\$when = \\$4;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2695,7 +2695,7 @@
 			"\t\\$user = \\$1;",
 			"\t\\$content = \\$2;",
 			"\t\\$when = \\$3;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2706,7 +2706,7 @@
 			"on event_quit {",
 			"\t\\$user = \\$1;",
 			"\t\\$when = \\$2;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2715,7 +2715,7 @@
 		"prefix": "heartbeat_10m",
 		"body": [
 			"on heartbeat_10m {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2724,7 +2724,7 @@
 		"prefix": "heartbeat_10s",
 		"body": [
 			"on heartbeat_10s {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2733,7 +2733,7 @@
 		"prefix": "heartbeat_15m",
 		"body": [
 			"on heartbeat_15m {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2742,7 +2742,7 @@
 		"prefix": "heartbeat_15s",
 		"body": [
 			"on heartbeat_15s {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2751,7 +2751,7 @@
 		"prefix": "heartbeat_1m",
 		"body": [
 			"on heartbeat_1m {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2760,7 +2760,7 @@
 		"prefix": "heartbeat_1s",
 		"body": [
 			"on heartbeat_1s {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2769,7 +2769,7 @@
 		"prefix": "heartbeat_20m",
 		"body": [
 			"on heartbeat_20m {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2778,7 +2778,7 @@
 		"prefix": "heartbeat_30m",
 		"body": [
 			"on heartbeat_30m {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2787,7 +2787,7 @@
 		"prefix": "heartbeat_30s",
 		"body": [
 			"on heartbeat_30s {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2796,7 +2796,7 @@
 		"prefix": "heartbeat_5m",
 		"body": [
 			"on heartbeat_5m {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2805,7 +2805,7 @@
 		"prefix": "heartbeat_5s",
 		"body": [
 			"on heartbeat_5s {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2814,7 +2814,7 @@
 		"prefix": "heartbeat_60m",
 		"body": [
 			"on heartbeat_60m {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2827,7 +2827,7 @@
 			"\t\\$reserved = \\$2;",
 			"\t\\@keystrokes = \\$3;",
 			"\t\\$token = \\$4;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2841,7 +2841,7 @@
 			"\t\\$userAgent = \\$3;",
 			"\t\\%applications = \\$4;",
 			"\t\\$token = \\$5;",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2850,7 +2850,7 @@
 		"prefix": "ready",
 		"body": [
 			"on ready {",
-			"\\t$0",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2859,8 +2859,8 @@
 		"prefix": "sendmail_done",
 		"body": [
 			"on sendmail_done {",
-			"\\t\\$campaign = \\$1;",
-			"\\t$0",
+			"\t\\$campaign = \\$1;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2869,11 +2869,11 @@
 		"prefix": "sendmail_post",
 		"body": [
 			"on sendmail_post {",
-			"\\t\\$campaign = \\$1;",
-			"\\t\\$email = \\$2;",
-			"\\t\\$status = \\$3;",
-			"\\t\\$message = \\$4;",
-			"\\t$0",
+			"\t\\$campaign = \\$1;",
+			"\t\\$email = \\$2;",
+			"\t\\$status = \\$3;",
+			"\t\\$message = \\$4;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2882,9 +2882,9 @@
 		"prefix": "sendmail_pre",
 		"body": [
 			"on sendmail_pre {",
-			"\\t\\$campaign = \\$1;",
-			"\\t\\$email = \\$2;",
-			"\\t$0",
+			"\t\\$campaign = \\$1;",
+			"\t\\$email = \\$2;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2893,15 +2893,15 @@
 		"prefix": "sendmail_start",
 		"body": [
 			"on sendmail_start {",
-			"\\t\\$campaign = \\$1;",
-			"\\t\\$targets = \\$2;",
-			"\\t\\$attachment = \\$3;",
-			"\\t\\$address = \\$4;",
-			"\\t\\$mailServer = \\$5;",
-			"\\t\\$subject = \\$6;",
-			"\\t\\$template = \\$7;",
-			"\\t\\$url = \\$8;",
-			"\\t$0",
+			"\t\\$campaign = \\$1;",
+			"\t\\$targets = \\$2;",
+			"\t\\$attachment = \\$3;",
+			"\t\\$address = \\$4;",
+			"\t\\$mailServer = \\$5;",
+			"\t\\$subject = \\$6;",
+			"\t\\$template = \\$7;",
+			"\t\\$url = \\$8;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2910,10 +2910,10 @@
 		"prefix": "ssh_checkin",
 		"body": [
 			"on ssh_checkin {",
-			"\\t\\$session = \\$1;",
-			"\\t\\$message = \\$2;",
-			"\\t\\$when = \\$3;",
-			"\\t$0",
+			"\t\\$session = \\$1;",
+			"\t\\$message = \\$2;",
+			"\t\\$when = \\$3;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2922,10 +2922,10 @@
 		"prefix": "ssh_error",
 		"body": [
 			"on ssh_error {",
-			"\\t\\$session = \\$1;",
-			"\\t\\$message = \\$2;",
-			"\\t\\$when = \\$3;",
-			"\\t$0",
+			"\t\\$session = \\$1;",
+			"\t\\$message = \\$2;",
+			"\t\\$when = \\$3;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2934,11 +2934,11 @@
 		"prefix": "ssh_indicator",
 		"body": [
 			"on ssh_indicator {",
-			"\\t\\$session = \\$1;",
-			"\\t\\$user = \\$2;",
-			"\\t\\$message = \\$3;",
-			"\\t\\$when = \\$4;",
-			"\\t$0",
+			"\t\\$session = \\$1;",
+			"\t\\$user = \\$2;",
+			"\t\\$message = \\$3;",
+			"\t\\$when = \\$4;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2947,8 +2947,8 @@
 		"prefix": "ssh_initial",
 		"body": [
 			"on ssh_initial {",
-			"\\t\\$session = \\$1;",
-			"\\t$0",
+			"\t\\$session = \\$1;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2957,11 +2957,11 @@
 		"prefix": "ssh_input",
 		"body": [
 			"on ssh_input {",
-			"\\t\\$session = \\$1;",
-			"\\t\\$user = \\$2;",
-			"\\t\\$message = \\$3;",
-			"\\t\\$when = \\$4;",
-			"\\t$0",
+			"\t\\$session = \\$1;",
+			"\t\\$user = \\$2;",
+			"\t\\$message = \\$3;",
+			"\t\\$when = \\$4;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2970,10 +2970,10 @@
 		"prefix": "ssh_output",
 		"body": [
 			"on ssh_output {",
-			"\\t\\$session = \\$1;",
-			"\\t\\$message = \\$2;",
-			"\\t\\$when = \\$3;",
-			"\\t$0",
+			"\t\\$session = \\$1;",
+			"\t\\$message = \\$2;",
+			"\t\\$when = \\$3;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2982,10 +2982,10 @@
 		"prefix": "ssh_output_alt",
 		"body": [
 			"on ssh_output_alt {",
-			"\\t\\$session = \\$1;",
-			"\\t\\$message = \\$2;",
-			"\\t\\$when = \\$3;",
-			"\\t$0",
+			"\t\\$session = \\$1;",
+			"\t\\$message = \\$2;",
+			"\t\\$when = \\$3;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -2994,10 +2994,10 @@
 		"prefix": "ssh_tasked",
 		"body": [
 			"on ssh_tasked {",
-			"\\t\\$session = \\$1;",
-			"\\t\\$message = \\$2;",
-			"\\t\\$when = \\$3;",
-			"\\t$0",
+			"\t\\$session = \\$1;",
+			"\t\\$message = \\$2;",
+			"\t\\$when = \\$3;",
+			"\t$0",
 			"}"
 		]
 	},
@@ -3006,16 +3006,16 @@
 		"prefix": "web_hit",
 		"body": [
 			"on web_hit {",
-			"\\t\\$method = \\$1;",
-			"\\t\\$requestUri = \\$2;",
-			"\\t\\$visitorAddress = \\$3;",
-			"\\t\\$visitorUserAgent = \\$4;",
-			"\\t\\$serverResponse = \\$5;",
-			"\\t\\$responseSize = \\$6;",
-			"\\t\\$description = \\$7;",
-			"\\t\\%parameters = \\$8;",
-			"\\t\\$when = \\$9;",
-			"\\t$0",
+			"\t\\$method = \\$1;",
+			"\t\\$requestUri = \\$2;",
+			"\t\\$visitorAddress = \\$3;",
+			"\t\\$visitorUserAgent = \\$4;",
+			"\t\\$serverResponse = \\$5;",
+			"\t\\$responseSize = \\$6;",
+			"\t\\$description = \\$7;",
+			"\t\\%parameters = \\$8;",
+			"\t\\$when = \\$9;",
+			"\t$0",
 			"}"
 		]
 	},
