@@ -44,7 +44,7 @@ This extensions offers a series of snippets for helping in building a Cobalt Str
 |artifact_payload | Generates a stageless payload artifact (exe, dll) from a Cobalt Strike listener name |
 |binject | Ask Beacon to inject a session into a specific process |
 |beacon_exploit_register | Register a Beacon privilege escalation exploit with Cobalt Strike. This adds an option to the elevate command |
-|PSEXEC_SERVICE | Set the service name used by jump psexec|psexec64|psexec_psh and psexec. |
+|PSEXEC_SERVICE | Set the service name used by jump psexec, psexec64, psexec_psh and psexec. |
 |-isadmin | Check if a session has admin rights |
 |bspawn | Ask Beacon to spawn a new session |
 |openWindowsExecutableDialog | Open the dialog to generate a Windows executable |
@@ -97,7 +97,7 @@ This extensions offers a series of snippets for helping in building a Cobalt Str
 |agC2info | Pull information from the c2info model. |
 |gunzip | Decompress a string (GZIP). |
 |bhashdump | Ask Beacon to dump local account password hashes |
-|POWERSHELL_DOWNLOAD_CRADLE | Change the form of the PowerShell download cradle used in Cobalt Strike's post-ex automation. This includes jump winrm|winrm64, [host] -> Access -> One Liner, and powershell-import. |
+|POWERSHELL_DOWNLOAD_CRADLE | Change the form of the PowerShell download cradle used in Cobalt Strike's post-ex automation. This includes jump winrm,winrm64, \[host\] -> Access -> One Liner, and powershell-import. |
 |sync_download | Sync a downloaded file (View -> Downloads) to a local path. |
 |binfo | Get information from a Beacon session's metadata |
 |drow_text | Adds a text field row to a &dialog |
