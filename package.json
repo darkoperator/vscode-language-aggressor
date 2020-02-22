@@ -4,10 +4,20 @@
     "description": "Cobalt Strike Aggressor Script Language Extension for Visual Studio Code.",
     "homepage": "https://github.com/darkoperator/vscode-language-aggressor",
     "license": "BSD-3-Clause",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.41.0"
     },
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/darkoperator/vscode-language-aggressor.git"
+	},
+    "galleryBanner": {
+		"color": "#ACD1EC",
+		"theme": "light"
+	},
+	"publisher": "DarkOperator",
     "categories": [
         "Programming Languages",
         "Snippets"
