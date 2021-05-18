@@ -1,50 +1,68 @@
 {
-    "name": "aggressorscript",
-    "displayName": "AggressorScript",
-    "description": "Cobalt Strike Aggressor Script Language Extension for Visual Studio Code.",
-    "homepage": "https://github.com/darkoperator/vscode-language-aggressor",
-    "license": "BSD-3-Clause",
-    "version": "1.0.1",
-    "icon": "images/icon.png",
-    "engines": {
-        "vscode": "^1.41.0"
-    },
-    "repository": {
+	"name": "aggressorscript",
+	"displayName": "AggressorScript",
+	"description": "Cobalt Strike Aggressor Script Language Extension for Visual Studio Code.",
+	"homepage": "https://github.com/darkoperator/vscode-language-aggressor",
+	"license": "BSD-3-Clause",
+	"version": "1.1.1",
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.41.0"
+	},
+	"repository": {
 		"type": "git",
 		"url": "https://github.com/darkoperator/vscode-language-aggressor.git"
 	},
-    "galleryBanner": {
+	"galleryBanner": {
 		"color": "#ACD1EC",
 		"theme": "light"
 	},
 	"publisher": "DarkOperator",
-    "categories": [
-        "Programming Languages",
-        "Snippets"
-    ],
-    "contributes": {
-        "languages": [{
-            "id": "cna",
-            "aliases": ["AggressorScript", "cna"],
-            "extensions": ["cna"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "cna",
-            "scopeName": "source.cna",
-            "path": "./syntaxes/cna.tmLanguage.json"
-        }],
-        "snippets": [{
-            "language": "cna",
-            "path": "./snippets/cna.json"
-        }]
-    },
-    "author": {
-        "name": "Carlos Perez",
-        "url": "https://www.darkoperator.com/"
-    },
-    "contributors": [{
-        "name": "Paul Laîné",
-        "url": "https://twitter.com/am0nsec"
-    }]
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "cna",
+				"aliases": [
+					"AggressorScript",
+					"cna"
+				],
+				"extensions": [
+					"cna"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "cna",
+				"scopeName": "source.cna",
+				"path": "./syntaxes/cna.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "cna",
+				"path": "./snippets/cna.json"
+			}
+		]
+	},
+	"author": {
+		"name": "Carlos Perez",
+		"url": "https://www.darkoperator.com/"
+	},
+	"contributors": [
+		{
+			"name": "Paul Laîné",
+			"url": "https://twitter.com/am0nsec"
+		}
+	],
+	"__metadata": {
+		"id": "a173852e-bd9b-4f45-a1ae-80720fc0e5f7",
+		"publisherId": "84336c4a-0cf5-4d58-b3c0-072b41cacc30",
+		"publisherDisplayName": "DarkOperator"
+	}
 }
