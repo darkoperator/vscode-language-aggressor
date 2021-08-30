@@ -11,3 +11,7 @@
 - Added Changelog.
 - Udated README.md
 - Added icon recomended by Raphael Mudge :)
+
+## [1.2.0] - 2021-08-30
+
+- Added new agressor and profiles entries for Cobalt Strike 4.4
