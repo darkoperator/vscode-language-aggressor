@@ -1236,7 +1236,7 @@
 		"description": "Ask a Beacon to upload a file",
 		"prefix": "bupload",
 		"body": [
-			"bunlink($0${1:beacon}, ${2:file})"
+			"bupload($0${1:beacon}, ${2:file})"
 		]
 	},
 	"bupload_raw": {
@@ -3231,6 +3231,126 @@
 		"prefix": "ts",
 		"body": [
 			"ts()"
+		]
+	},
+	"pe_insert_rich_header": {
+		"description": "Insert rich header data into Beacon DLL Content. If there is existing rich header information, it will be replaced.",
+		"prefix": "pe_insert_rich_header",
+		"body": [
+			"pe_insert_rich_header($0${1:temp_dll}{2:rich_heade})"
+		]
+	},
+	"pe_mask": {
+		"description": "Mask data in the Beacon DLL Content based on position and length.",
+		"prefix": "pe_mask",
+		"body": [
+			"pe_mask($0${1:dll}{2:start},{3:length},{4:mask_key})"
+		]
+	},
+	"pe_mask_section": {
+		"description": "Mask data in the Beacon DLL Content based on position and length.",
+		"prefix": "pe_mask_section",
+		"body": [
+			"pe_mask_section($0${1:dll}{2:section},{3:mask_key})"
+		]
+	},
+	"pe_mask_string": {
+		"description": "Mask a string in the Beacon DLL Content based on position.",
+		"prefix": "pe_mask_string",
+		"body": [
+			"pe_mask_string($0${1:dll}{2:start},{3:mask_key})"
+		]
+	},
+	"pe_patch_code": {
+		"description": "Patch code in the Beacon DLL Content based on find/replace in .text section.",
+		"prefix": "pe_patch_code",
+		"body": [
+			"pe_patch_code($0${1:dll}{2:byte_array},{3:resolved_offset})"
+		]
+	},
+	"pe_remove_rich_header": {
+		"description": "Remove the rich header from Beacon DLL Content.",
+		"prefix": "pe_remove_rich_header",
+		"body": [
+			"pe_remove_rich_header($0${1:dll})"
+		]
+	},
+	"pe_set_compile_time_with_long": {
+		"description": "Set the compile time in the Beacon DLL Content.",
+		"prefix": "pe_set_compile_time_with_long",
+		"body": [
+			"pe_set_compile_time_with_long($0${1:dll},{2:date})"
+		]
+	},
+	"pe_set_compile_time_with_string": {
+		"description": "Set the compile time in the Beacon DLL Content.",
+		"prefix": "pe_set_compile_time_with_string",
+		"body": [
+			"pe_set_compile_time_with_string($0${1:dll},{2:time})"
+		]
+	},
+	"pe_set_export_name": {
+		"description": "Set the export name in the Beacon DLL Content.",
+		"prefix": "pe_set_export_name",
+		"body": [
+			"pe_set_export_name($0${1:dll},{2:exportname})"
+		]
+	},
+	"pe_set_long": {
+		"description": "Places a long value at a specified location.",
+		"prefix": "pe_set_long",
+		"body": [
+			"pe_set_long($0${1:dll},{2:location},{3:value})"
+		]
+	},
+	"pe_set_short": {
+		"description": "Places a short value at a specified location.",
+		"prefix": "pe_set_short",
+		"body": [
+			"pe_set_short($0${1:dll},{2:location},{3:value})"
+		]
+	},
+	"pe_set_string": {
+		"description": "Places a string value at a specified location.",
+		"prefix": "pe_set_string",
+		"body": [
+			"pe_set_string($0${1:dll},{2:location},{3:string})"
+		]
+	},
+	"pe_set_stringz": {
+		"description": "Places a string value at a specified location and adds a zero terminator.",
+		"prefix": "pe_set_stringz",
+		"body": [
+			"pe_set_stringz($0${1:dll},{2:location},{3:string})"
+		]
+	},
+	"pe_set_value_at": {
+		"description": "Sets a long value based on the location resolved by a name from the PE Map (see pedump).",
+		"prefix": "pe_set_value_at",
+		"body": [
+			"pe_set_value_at($0${1:dll},{2:location},{3:value})"
+		]
+	},
+	"pe_stomp": {
+		"description": "Set a string to null characters. Start at a specified location and sets all characters to null until a null string terminator is reached.",
+		"prefix": "pe_stomp",
+		"body": [
+			"pe_set_value_at($0${1:dll},{2:location})"
+		]
+	},
+	"pe_update_checksum": {
+		"description": "Update the checksum in the Beacon DLL Content.",
+		"prefix": "pe_update_checksum",
+		"body": [
+			"pe_set_value_at($0${1:dll})"
+		]
+	}
+	,
+	"pedump": {
+		"description": "Parse an executable Beacon into a map of the PE Header information. The parsed information can be used for research or programmatically to make changes to the Beacon.",
+		"prefix": "pedump",
+		"body": [
+			"pedump($0${1:dll})"
 		]
 	}
 }
